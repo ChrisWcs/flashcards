@@ -1,0 +1,28 @@
+{
+    "cards" : [
+        {
+            "front": "blank",
+            "back": "blank"
+        },
+        {
+            "front": "I",
+            "back": "Yo"
+        },
+        {
+            "front": "you",
+            "back": "tu"
+        },
+        {
+            "front": "hello",
+            "back": "hola"
+        },
+        {
+            "front": "you (formal)",
+            "back": "usted"
+        },
+        {
+            "front": "work",
+            "back": "trabajo"
+        }
+    ]
+}
