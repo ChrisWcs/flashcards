@@ -8,7 +8,7 @@ const reducer = (state = initialState(spanishList), action) => {
         case FLIP_CARD:
             return {
                 ...state,
-                list: [ 
+                list: [
                     ...state.list.slice(0, action.index), 
                     {
                         ...state.list[action.index],

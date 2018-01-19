@@ -2,8 +2,16 @@ import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import React from 'react';
 
+import reducer from '../reducers/reducer';
+
+import MFlexCol from '../styledcomps/MFlexCol';
+
+
 const App = () => (
-    <h1>hello</h1>
+    <Provider store={createStore(reducer)}>
+        <MFlexCol>
+        </MFlexCol>
+    </Provider>
 );
 
 export default App;
