@@ -8,6 +8,7 @@ const MenuBtn = styled.button`
     font-family: Arial;
     font-size: 30px;
     padding: 10px;
+    cursor: pointer;
 
     &:hover {
         background: #B71C1C;
