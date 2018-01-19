@@ -23,6 +23,14 @@
         {
             "front": "work",
             "back": "trabajo"
+        },
+        {
+            "front": "Accounting",
+            "back": "Contabilidad"
+        },
+        {
+            "front": "Computer",
+            "back": "Computadora"
         }
     ]
 }
