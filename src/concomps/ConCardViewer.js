@@ -7,6 +7,7 @@ import CardViewer from '../components/CardViewer';
 const mapStateToProps = (state) => ({
     list: state.list,
     view: state.view,
+    cardIndex: state.cardIndex,
 });
 
 const mapDispatchToProps = (dispatch) => ({

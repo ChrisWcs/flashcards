@@ -6,12 +6,12 @@ import Card from '../components/Card';
 import NextBtn from '../styledcomps/NextBtn';
 import FlexRowCenter from '../styledcomps/FlexRowCenter';
 
-const StudyView = ({list, cardIndex,flipFunc, forwardFunc, backwardFunc}) => (
+const StudyView = ({list, cardIndex, flipFunc, forwardFunc, backwardFunc}) => (
     <FlexRowCenter>
         <NextBtn onClick={backwardFunc}>
             {"<"}
         </NextBtn>
-        <Card front={list[cardIndex].front} 
+        <Card front={(list[cardIndex].front)} 
               back={list[cardIndex].back} 
               flipped={list[cardIndex].flipped} 
               flipFunc={flipFunc}/>

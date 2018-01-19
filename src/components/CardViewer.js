@@ -5,6 +5,7 @@ import AllCards from './AllCards';
 import StudyView from './StudyView';
 
 const CardViewer = ({view, list, cardIndex, flipFunc, forwardFunc, backwardFunc}) => {
+    console.log(list);
     if( view === "ALL"){
         return (
             <AllCards list={list} flipFunc={flipFunc}/>
