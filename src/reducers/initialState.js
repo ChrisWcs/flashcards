@@ -6,7 +6,7 @@ const addStatus = ( card ) => ({
 const initialState = ( jsonList ) => ({
     view: "ALL",
     list: [ ...(jsonList.cards.map(addStatus))],
-    cardIndex: 1,
+    cardIndex: 0,
 });
 
 export default initialState;

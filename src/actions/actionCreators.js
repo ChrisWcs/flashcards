@@ -8,3 +8,11 @@ export const createFlipCard = (index) => ({
     type: FLIP_CARD,
     index,
 });
+
+export const createForwardCard = () => ({
+    type: FORWARD_CARD
+});
+
+export const createBackwardCard = () => ({
+    type: BACKWARD_CARD
+});

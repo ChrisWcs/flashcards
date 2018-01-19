@@ -18,7 +18,7 @@ const AllCards = ({list, flipFunc}) => (
 
 AllCards.propTypes = {
     list: PropTypes.array,
-    flipFunc: PropTypes.flipFunc,
+    flipFunc: PropTypes.func,
 };
 
 export default AllCards;

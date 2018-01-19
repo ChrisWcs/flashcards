@@ -4,8 +4,6 @@ import initialState from './initialState';
 import spanishList from '../json/spanish';
 
 const reducer = (state = initialState(spanishList), action) => {
-    console.log(action);
-    console.log(state);
     switch(action.type){
         case FLIP_CARD:
             return {

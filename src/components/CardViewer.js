@@ -4,22 +4,29 @@ import PropTypes from 'prop-types';
 import AllCards from './AllCards';
 import StudyView from './StudyView';
 
-const CardViewer = ({view, list, flipFunc}) => {
+const CardViewer = ({view, list, cardIndex, flipFunc, forwardFunc, backwardFunc}) => {
     if( view === "ALL"){
         return (
             <AllCards list={list} flipFunc={flipFunc}/>
         );
     } else {
         return (
-            <StudyView />
+            <StudyView list={list}
+                       cardIndex={cardIndex} 
+                       flipFunc={flipFunc(cardIndex)} 
+                       forwardFunc={forwardFunc} 
+                       backwardFunc={backwardFunc}/>
         );
     }
-}
+};
 
 CardViewer.propTypes = {
-    view: PropTypes.bool,
+    view: PropTypes.string,
     list: PropTypes.array,
     flipFunc: PropTypes.func,
+    cardIndex: PropTypes.number,
+    forwardFunc: PropTypes.func,
+    backwardFunc: PropTypes.func,
 };
 
 export default CardViewer;

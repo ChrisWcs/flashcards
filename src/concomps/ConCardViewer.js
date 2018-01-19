@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 
-import { createFlipCard } from '../actions/actionCreators';
+import { createFlipCard, createBackwardCard, createForwardCard } from '../actions/actionCreators';
 
 import CardViewer from '../components/CardViewer';
 
@@ -12,7 +12,13 @@ const mapStateToProps = (state) => ({
 const mapDispatchToProps = (dispatch) => ({
     flipFunc: (i) => () => {
         dispatch(createFlipCard(i));
-    }
+    },
+    forwardFunc: () => {
+        dispatch(createForwardCard());
+    },
+    backwardFunc: () => {
+        dispatch(createBackwardCard());
+    },
 });
 
 const ConCardViewer = connect(mapStateToProps, mapDispatchToProps)(CardViewer);
