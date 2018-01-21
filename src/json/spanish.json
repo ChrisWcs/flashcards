@@ -1,10 +1,6 @@
 {
     "cards" : [
         {
-            "front": "blank",
-            "back": "blank"
-        },
-        {
             "front": "I",
             "back": "Yo"
         },
@@ -12,6 +8,18 @@
             "front": "you",
             "back": "tu"
         },
+        {
+            "front": "he",
+            "back": "el"
+        },
+        {
+            "front": "she",
+            "back": "ella"
+        },
+        {
+            "front": "we/us",
+            "back": "nosotros/nosotras"
+        }, 
         {
             "front": "hello",
             "back": "hola"
@@ -31,6 +39,10 @@
         {
             "front": "Computer",
             "back": "Computadora"
+        },
+        {
+            "front": "shoes",
+            "back": "zapatos"
         }
     ]
 }
